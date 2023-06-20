@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJS</title>
+    <style>
+        table,th,td{
+           border: 1px solid red;
+           border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    <form action="/" method="post">
+   <input type="text" name="uname"></input>
+   <input type="submit"></input>
+</form>
+    <h1>
+        hello welcome to ejs
+    </h1>
+    <table >
+        <tr>
+        <th>DATA</th>
+    </tr>
+    <%if(arr.length>0){%>
+        
+    <%for(i=0;i<=arr.length;i++){%>
+        <tr>
+            <td><%=arr[i]%></td>
+            </tr>
+            
+            <%}%>
+        </table>
+       
+        
+
+    <%}else{%>
+        <h1>No data found</h1>
+        <%}%>
+</body>
+</html>
